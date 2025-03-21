@@ -17,18 +17,18 @@ function changeColor(e){
     else{
         colorEl.style.color = "White";
     }
-
-}   
+}
 
 function changeText() {
     let textChange = inputEl.value;
     textEl.innerText = textChange;
 }
 
-// Refrance
-// const para = document.createElement("p");
-// const node = document.createTextNode("This is new.");
-// para.appendChild(node);
+let insertText = prompt("Hello, put in some text please")
 
-// const element = document.getElementById("div1");
-// element.appendChild(para);
+let divEl = document.createElement ("div")
+document.body.appendChild (divEl)
+let avsnittEl = document.createElement ("p")
+avsnittEl.innerHTML = "This is your text " + insertText
+divEl.appendChild(avsnittEl)
+divEl.innerHTML += "<h3> This is a text element created with Javascript </h3>"
