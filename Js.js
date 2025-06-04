@@ -11,7 +11,7 @@ function changeColor(e){
     let colorChange = colorEl.value
     
     if (CSS.supports('color', colorChange)){
-        colorEl.style.color = "white"
+        // colorEl.style.color = "white"
         bodyEl.style.backgroundColor = colorChange;
     }
     else{
